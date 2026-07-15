@@ -4,7 +4,7 @@ An AI-powered Teaching Assistant built with **Streamlit**, **RAG (Retrieval-Augm
 
 ### Home Page
 
-![Home](assets/home.png)
+![Home](assets/home.jpeg)
 
 > **⚡ Offline Support**
 >
