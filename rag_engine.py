@@ -108,7 +108,7 @@ CONTEXT:
 """
     print("Requesting question paper from qwen...")
     response = ollama.chat(
-        model="qwen2.5:3b",
+        model="qwen2.5:1.5b",
         messages=[
             {
                 "role": "user",
