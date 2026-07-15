@@ -1,6 +1,6 @@
 # 🎓 AI Teaching Assistant
 
-An AI-powered Teaching Assistant built with **Streamlit**, **RAG (Retrieval-Augmented Generation)**, **FAISS**, **Sentence Transformers**, and **Google Gemini**. The application allows users to upload PDF documents, ask questions, generate question papers, create flashcards, build study plans, and generate PowerPoint presentations from study material.
+An AI-powered Teaching Assistant built with **Streamlit**, **RAG (Retrieval-Augmented Generation)**, **FAISS**, **Sentence Transformers**, and **Ollama Model**. The application allows users to upload PDF documents, ask questions, generate question papers, create flashcards, build study plans, and generate PowerPoint presentations from study material.
 
 ---
 
@@ -8,7 +8,7 @@ An AI-powered Teaching Assistant built with **Streamlit**, **RAG (Retrieval-Augm
 
 - 📄 Upload and analyze PDF documents
 - 🔍 Semantic search using FAISS vector database
-- 🤖 AI-powered question answering with Google Gemini
+- 🤖 AI-powered question answering with Ollama Model
 - 📝 Generate question papers from uploaded content
 - 🧠 Generate flashcards for quick revision
 - 📅 Create personalized study plans
@@ -22,7 +22,7 @@ An AI-powered Teaching Assistant built with **Streamlit**, **RAG (Retrieval-Augm
 
 - Python
 - Streamlit
-- Google Gemini API
+- Ollama
 - Sentence Transformers
 - FAISS
 - LangChain Text Splitters
