@@ -143,6 +143,43 @@ ollama --version
 
 ---
 
+## 💡 Choosing an Ollama Model
+
+This project is configured to use **Qwen2.5:1.5B** by default because it provides a good balance between performance and hardware requirements. It runs well on most modern laptops and desktop computers.
+
+If your system has more RAM and a more powerful CPU/GPU, you can use larger models for improved response quality. Simply pull the desired model with Ollama and update the model name in `rag_engine.py`.
+
+### Recommended Models
+
+| Model | Recommended Hardware | Notes |
+|--------|----------------------|-------|
+| `qwen2.5:1.5b` | 8 GB+ RAM | Default model. Fast and lightweight. |
+| `qwen2.5:3b` | 16 GB+ RAM | Better reasoning while remaining efficient. |
+| `qwen2.5:7b` | 16–32 GB+ RAM | Higher-quality responses with moderate hardware. |
+| `gemma3:4b` | 16 GB+ RAM | Good balance of speed and quality. |
+| `gemma3:12b` | 32 GB+ RAM | Stronger reasoning and content generation. |
+| `llama3.1:8b` | 16–32 GB+ RAM | Excellent general-purpose model. |
+| `mistral:7b` | 16 GB+ RAM | Fast and capable for RAG applications. |
+
+### Example
+
+Download another model:
+
+```bash
+ollama pull gemma3:4b
+```
+
+Then change the model name in `rag_engine.py`:
+
+```python
+response = ollama.chat(
+    model="gemma3:4b",
+    messages=messages
+)
+```
+
+> **Note:** Larger models generally produce higher-quality responses but require more system memory and computational resources. Choose the model that best matches your hardware.
+
 ## 5. Download the Qwen2.5 Model
 
 Pull the model from Ollama:
