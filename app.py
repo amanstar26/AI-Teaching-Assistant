@@ -22,13 +22,13 @@ from rag_engine import (
     generate_study_plan,
     generate_ppt_content
 )
-from qp import (
+from generators.qp import (
     create_question_paper_pdf
 )
-from study_plan import (
+from generators.study_plan import (
     create_study_plan_pdf
 )
-from ppt_gen import create_ppt
+from generators.ppt_gen import create_ppt
 from streamlit_pdf_viewer import pdf_viewer
 
 
