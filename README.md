@@ -2,6 +2,24 @@
 
 An AI-powered Teaching Assistant built with **Streamlit**, **RAG (Retrieval-Augmented Generation)**, **FAISS**, **Sentence Transformers**, and **Ollama Model**. The application allows users to upload PDF documents, ask questions, generate question papers, create flashcards, build study plans, and generate PowerPoint presentations from study material.
 
+### Home Page
+
+![Home](assets/home.png)
+
+> **⚡ Offline Support**
+>
+> The application automatically downloads the embedding model (`BAAI/bge-small-en-v1.5`) during the first run and stores it locally in the `models/` directory.
+>
+> After the initial download, the application works **completely offline** for embedding generation. No internet connection is required unless you choose to download a different embedding model.
+>
+> **Note:** Since the project uses **Ollama**, the `qwen2.5:1.5b` model must also be downloaded once using:
+>
+> ```bash
+> ollama pull qwen2.5:1.5b
+> ```
+>
+> Once both models are available locally, the application can run entirely offline.
+
 ---
 
 ## ✨ Features
@@ -191,12 +209,8 @@ Example:
 
 ```
 assets/
-├── home.png
-├── upload.png
-├── chat.png
-├── flashcards.png
-├── study_plan.png
-└── ppt_generation.png
+├── home.jpeg
+└── question_paper.jpeg
 ```
 
 ---
