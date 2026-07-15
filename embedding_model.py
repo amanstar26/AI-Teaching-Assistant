@@ -12,6 +12,11 @@ def load_embedding_model():
         return SentenceTransformer(MODEL_PATH)
 
     print("🌐 Local model not found. Downloading once...")
+
+    # Create models directory if it doesn't exist
+    os.makedirs(os.path.dirname(MODEL_PATH), exist_ok=True)
+
     model = SentenceTransformer("BAAI/bge-small-en-v1.5")
     model.save(MODEL_PATH)
+
     return model
